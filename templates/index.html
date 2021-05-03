@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
     <title>Areas verdes</title>
 </head>
 <body>
-    <p>Prueba</p>
+    <header>
+        <h3>Areas verdes</h3>
+    </header>
+    <section>
+        <p>Sube la imagen de un mapa aéreo</p>
+        <input type="file" id="image" accept="image/*">
+    </section>
+
+    <section class="content">
+        <img src="" alt="" id="original_image">
+        <img src="" alt="" id="segmentation_image">
+    </section>
 </body>
 </html>
