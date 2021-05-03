@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <script src="{{ url_for('static', filename='script.js') }}"></script>
     <title>Areas verdes</title>
 </head>
@@ -17,6 +18,8 @@
 
     <section class="content">
         <img src="" alt="" id="original_image">
+
+        <h3>Predicción:</h3>
         <img src="" alt="" id="segmentation_image">
     </section>
 </body>
